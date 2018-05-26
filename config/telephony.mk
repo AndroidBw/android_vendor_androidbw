@@ -8,7 +8,7 @@ PRODUCT_COPY_FILES += \
 
 # Telephony packages
 PRODUCT_PACKAGES += \
-    messaging \
+    signal \
     Stk \
     CellBroadcastReceiver
 
