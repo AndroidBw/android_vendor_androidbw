@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Default notification/alarm sounds
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound=Argon.ogg \
     ro.config.alarm_alert=Hassium.ogg
 
@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Backgrounds \
     Eleven \
+    Etar \
     Jelly \
     LockClock \
     Profiles \
@@ -59,6 +60,10 @@ PRODUCT_PACKAGES += \
     font_log.png \
     libhealthd.lineage
 endif
+
+# Customizations
+PRODUCT_PACKAGES += \
+    LineageNavigationBarNoHint
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
